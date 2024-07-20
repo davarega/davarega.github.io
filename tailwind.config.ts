@@ -8,7 +8,8 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      'poppins': ['Poppins', 'sans-serif'],
+      poppins: ['var(--font-poppins)'],
+      quintessential: ['var(--font-quintessential)'],
     },
     extend: {
       colors: {

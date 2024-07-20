@@ -24,7 +24,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
 					<div className="flex justify-between items-center h-full">
 						<div>
 							<Link href="/">
-								<p className="text-white font-bold text-4xl">Logo</p>
+								<h1 className="text-white font-poppins font-bold text-4xl">LOGO</h1>
 							</Link>
 						</div>
 						<button
@@ -55,7 +55,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
 				</div>
 			</div>
 			<div>
-				<h1 className="hidden md:flex justify-center h-full items-center flex text-2xl">WELCOME TO ASEP NEWS !</h1>
+				<h1 className="hidden md:flex justify-center font-quintessential h-full items-center flex text-5xl">WELCOME TO ASEP NEWS !</h1>
 			</div>
 			<div className="hidden md:flex w-full bottom-0">
 				<div className="container h-20 mx-auto px-4">

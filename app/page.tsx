@@ -35,7 +35,8 @@ export default function Home() {
       </div>
       <div id="2" className="bg-white text-black">
         <div className="container px-4 mx-auto flex gap-10 py-20 bg-red-100">
-          <h1>Hello World!</h1>
+          <h1 className="text-2xl font-poppins font-semibold">TERBARU</h1>
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"/>
         </div>
       </div>
     </div>
