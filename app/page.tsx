@@ -34,9 +34,78 @@ export default function Home() {
         </div>
       </div>
       <div id="2" className="bg-white text-black">
-        <div className="container px-4 mx-auto flex gap-10 py-20 bg-red-100">
-          <h1 className="text-2xl font-poppins font-semibold">TERBARU</h1>
-          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"/>
+        <div className="container px-4 mx-auto gap-10 py-10 bg-red-100">
+          <div>
+            <h1 className="text-2xl font-poppins font-semibold">TERBARU</h1>
+            <hr className="w-20 h-1 my-1 bg-red-800 border-0 rounded" />
+          </div>
+          <div className="flex">
+            <div className="flex flex-col gap-5 py-10 bg-yellow-100">
+              <div className="flex gap-4">
+                <Image
+                  src="/images/temp.jpg"
+                  alt="Asep News"
+                  className="rounded-2xl"
+                  width={400}
+                  height={0}
+                />
+                <div className="">
+                  <h1 className="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, minima nulla? Saepe, impedit odio? Ipsam quaerat
+                    maxime ipsa perferendis est.
+                  </h1>
+                  <p className="pt-2">Olahraga</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <Image
+                  src="/images/temp.jpg"
+                  alt="Asep News"
+                  className="rounded-2xl"
+                  width={400}
+                  height={0}
+                />
+                <div className="">
+                  <h1 className="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, minima nulla? Saepe, impedit odio? Ipsam quaerat
+                    maxime ipsa perferendis est.
+                  </h1>
+                  <p className="pt-2">Olahraga</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <Image
+                  src="/images/temp.jpg"
+                  alt="Asep News"
+                  className="rounded-2xl"
+                  width={400}
+                  height={0}
+                />
+                <div className="">
+                  <h1 className="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, minima nulla? Saepe, impedit odio? Ipsam quaerat
+                    maxime ipsa perferendis est.
+                  </h1>
+                  <p className="pt-2">Olahraga</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-blue-100">
+              <div className="px-10 py-5 text-white bg-gradient-to-b from-purple-mate via-blue-mate to-blue-dash">
+                <h1>LEADERBOARD</h1>
+                <div>
+                  <h1>1. Lorem ipsum dolor sit amet.</h1>
+                  <h1>2. Lorem ipsum dolor sit amet.</h1>
+                  <h1>3. Lorem ipsum dolor sit amet.</h1>
+                  <h1>4. Lorem ipsum dolor sit amet.</h1>
+                  <h1>5. Lorem ipsum dolor sit amet.</h1>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
