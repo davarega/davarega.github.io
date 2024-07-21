@@ -1,4 +1,5 @@
 import Navigation from "./components/navigation";
+import Footer from "./components/footer";
 import "./globals.css";
 import { Inter, Poppins, Quintessential } from "next/font/google";
 
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${poppins.variable} ${quintessential.variable}`}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );
