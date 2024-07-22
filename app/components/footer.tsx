@@ -9,7 +9,7 @@ export default function Footer() {
 				<div className="container mx-auto px-4">
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-8 items-center justify-items-center">
 						<div>
-							<h1 className="text-9xl font-bold">LOGO</h1>
+							<h1 className="text-7xl md:text-9xl font-bold">LOGO</h1>
 							<div className="my-8 gap-2 flex flex-col">
 								<p className="font-bold text-lg">informasi:</p>
 								<Link href="#" className="w-fit">

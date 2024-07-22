@@ -22,6 +22,7 @@ const config: Config = {
           dash: "#43B7B8",
           base: "#274B74",
         },
+        'black-rgba': 'rgba(0, 0, 0, 0.54)',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
