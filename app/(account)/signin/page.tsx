@@ -74,7 +74,7 @@ const Login = () => {
                         </div>
                         <div className="flex items-center mt-5">
                             <div>
-                                <p className="text-sm">Don't have an account?</p>
+                                <p className="text-sm">{"Don't have an account?"}</p>
                             </div> 
                             <div>
                                 <p><Link href="#" className="text-sm ml-2 text-[#4F8FDA]">Register</Link></p>

@@ -243,7 +243,7 @@ export default function Home() {
 					<div className="grid md:grid-cols-3 gap-8 px-4 md:px-0">
 						{/* Load berita */}
 						{recomendNews.map((item, index) => (
-							<div className="max-w-md max-h-96">
+							<div key={index} className="max-w-md max-h-96">
 								<Image
 									priority={false}
 									src={item.image ?? "/images/temp.jpg"}
