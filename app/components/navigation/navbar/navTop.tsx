@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const NavTop = ({ toggle }: { toggle: () => void }) => {
 	return (
-		<div className="sticky z-[99] top-0 md:relative bg-gradient-to-r from-blue-base to-purple-base md:from-purple-mate md:via-blue-mate md:to-blue-dash flex-col justify-between">
+		<div className="flex-col justify-between">
 			{/* Navbar Atas */}
 			<div className="w-full">
 				<div className="container mx-auto px-4 h-20">
@@ -33,13 +33,18 @@ const NavTop = ({ toggle }: { toggle: () => void }) => {
 								</Link>
 							</li>
 							<li>
+								<Link href="/profil">
+									<p>Profil</p>
+								</Link>
+							</li>
+							<li>
 								<Link href="/signin">
-									<p>masuk</p>
+									<p>Masuk</p>
 								</Link>
 							</li>
 							<li>
 								<Link href="/signup">
-									<p>daftar</p>
+									<p>Daftar</p>
 								</Link>
 							</li>
 						</ul>

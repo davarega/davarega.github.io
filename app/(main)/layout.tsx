@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${poppins.variable} ${quintessential.variable}`}>
+      <body className={`${inter.className} ${poppins.variable} ${quintessential.variable} bg-gradient-to-r from-blue-base to-purple-base md:from-purple-mate md:via-blue-mate md:to-blue-dash`}>
         <Navigation />
         {children}
         <Footer />

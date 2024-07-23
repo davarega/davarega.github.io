@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import Link from "next/link";
 
 const NavBottom = () => {
+	const [scroll, setScroll] = useState(false);
+
+	if (typeof window !== "undefined") {
+		window.onscroll = () => {
+			setScroll(window.scrollY > 520);
+		};
+	}
 
 	type navItem = {
 		label: string;
@@ -59,7 +66,7 @@ const NavBottom = () => {
 	]
 
 	return (
-		<div className="sticky z-[99] top-0 bg-gradient-to-r from-blue-base to-purple-base md:from-purple-mate md:via-blue-mate md:to-blue-dash flex flex-col justify-between">
+		<div className={`${scroll ? "bg-gradient-to-r from-blue-base to-purple-base md:from-purple-mate md:via-blue-mate md:to-blue-dash" : ""} sticky z-[99] top-0 flex flex-col justify-between`}>
 			{/* Navbar bawah */}
 			<div className="hidden md:flex w-full bottom-0">
 				<div className="container h-20 mx-auto px-4">

@@ -26,6 +26,14 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.large-checkbox {
+  @apply h-4 w-4; /* Menentukan ukuran tinggi dan lebar checkbox */
+  /* Anda bisa menambahkan transform: scale() di sini jika perlu memperbesar lebih lanjut */
+}
+.bg-gradient-custom {
+  background-image: linear-gradient(to right, #24144C, #6D459A, #C53998, #4F356B);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

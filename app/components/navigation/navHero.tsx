@@ -13,10 +13,12 @@ const Navigation = () => {
 	};
 	return (
 		<>
+		{/* <div className="bg-gradient-to-r from-blue-base to-purple-base md:from-purple-mate md:via-blue-mate md:to-blue-dash"> */}
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<NavTop toggle={toggle} />
 			<Hero />
 			<NavBottom />
+		{/* </div> */}
 		</>
 	);
 };

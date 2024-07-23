@@ -23,9 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${poppins.variable} ${quintessential.variable}`}>
-        <Navbar />
-        {children}
+      <body className={`${inter.className} ${poppins.variable} ${quintessential.variable} bg-no-repeat bg-cover`} style={{ backgroundImage: "url('/images/background.png')" }}>
+        <div className="flex flex-col h-screen container mx-auto text-black">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );
