@@ -23,6 +23,8 @@ const config: Config = {
           base: "#274B74",
         },
         'black-rgba': 'rgba(0, 0, 0, 0.54)',
+        'cs-blue': '#274B74',
+        'cs-purple': '#8233C5',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
