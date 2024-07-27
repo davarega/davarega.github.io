@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { HiOutlineChevronLeft } from 'react-icons/hi';
 import Image from 'next/image';
-import profilePic from '../../../public/images/profilelogo.jpeg';
+import { noProfileLogo } from '../../components/loadimages';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-cs-blue to-cs-purple p-4 rounded-30 top-0 sticky z-[100]">
+    <nav className="bg-gradient-to-r from-blue-base to-purple-base p-4 rounded-30 top-0 sticky z-[100]">
       <div className='container mx-auto'>
         <div className="max-w-9xl mx-auto flex items-center justify-between">
           <div className="flex items-center">
@@ -30,7 +30,7 @@ const Navbar = () => {
             />
             <button onClick={toggleDropdown} className="relative">
               <Image
-                src={profilePic}
+                src={noProfileLogo}
                 alt="Profile"
                 className="rounded-full"
                 width={32}

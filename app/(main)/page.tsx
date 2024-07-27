@@ -129,7 +129,6 @@ export default function Home() {
 					{/* Berita besar */}
 					<div className="group col-span-2 h-full relative">
 						<Image
-							priority={false}
 							src={topNews[0].image ?? "/images/temp.jpg"}
 							alt={topNews[0].title?.slice(0, 10) ?? "Top News 1"}
 							className="rounded-2xl h-full"
@@ -143,7 +142,6 @@ export default function Home() {
 					<div className="grid col-span-2 md:col-span-1 gap-5">
 						<div className="group relative">
 							<Image
-								priority={false}
 								src={topNews[1].image ?? "/images/temp.jpg"}
 								alt={topNews[1].title?.slice(0, 10) ?? "Top News 1"}
 								className="rounded-2xl w-full"
@@ -156,7 +154,6 @@ export default function Home() {
 						</div>
 						<div className="group relative">
 							<Image
-								priority={false}
 								src={topNews[2].image ?? "/images/temp.jpg"}
 								alt={topNews[2].title?.slice(0, 10) ?? "Top News 1"}
 								className="rounded-2xl w-full"
@@ -182,9 +179,8 @@ export default function Home() {
 						<div className="flex flex-col gap-5">
 							{/* Load berita */}
 							{recentNews.map((item, index) => (
-								<div className="flex flex-col md:flex-row gap-4">
+								<div key={index} className="flex flex-col md:flex-row gap-4">
 									<Image
-										priority={false}
 										src={item.image ?? "/images/temp.jpg"}
 										alt={item.title?.slice(0, 10) ?? index.toString()}
 										className="rounded-2xl w-full md:w-1/3"
@@ -206,10 +202,9 @@ export default function Home() {
 							<div className="mx-5 pb-8">
 								{/* List leaderboard 1 - 3 */}
 								{leaderboardTop.map((item, index) => (
-									<div className={`flex gap-2 font-semibold ${item.classname}`}>
+									<div key={index} className={`flex gap-2 font-semibold ${item.classname}`}>
 										{item.pos && (
 											<Image
-												priority={false}
 												src={item.pos}
 												alt={index.toString()}
 												width={20}
@@ -222,7 +217,7 @@ export default function Home() {
 								))}
 								{/* List leaderboard 4 - 10 */}
 								{leaderboard.map((item, index) => (
-									<div className="flex gap-2">
+									<div key={index} className="flex gap-2">
 										<p>{item.pos}</p>
 										<p>{item.name}</p>
 										<p>{item.score}</p>
@@ -245,7 +240,6 @@ export default function Home() {
 						{recomendNews.map((item, index) => (
 							<div key={index} className="max-w-md max-h-96">
 								<Image
-									priority={false}
 									src={item.image ?? "/images/temp.jpg"}
 									alt={item.title?.slice(0, 10) ?? index.toString()}
 									width={500}
