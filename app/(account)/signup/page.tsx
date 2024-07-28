@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Card from "../ui/card";
 import * as z from "zod"
 import { useForm } from "react-hook-form"
@@ -17,8 +18,6 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { toast } from "@/components/ui/use-toast"
-import Link from "next/link";
-import ProfilPage from "@/app/(profile)/profile/page";
 
 const Signup = () => {
     const form = useForm<z.infer<typeof RegisterSchema>>({
@@ -42,7 +41,7 @@ const Signup = () => {
                 </pre>
             ),
         })
-        return <ProfilPage username={data.username} />
+        return
     }
 
     return (
