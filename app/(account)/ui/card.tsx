@@ -9,7 +9,7 @@ const Card = ({ children, text = "", }) => {
 				<div className="text-lg md:text-xl">
 					{text}
 				</div>
-				<div className="flex gap-2 text-white">
+				<div className="flex gap-3 text-white">
 					<Link href="#">
 						<FaGoogle size={34} href="#" className="p-2 bg-gradient-to-b from-blue-base to-purple-base rounded-full" />
 					</Link>

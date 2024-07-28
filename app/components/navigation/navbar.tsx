@@ -11,10 +11,8 @@ const Navigation = () => {
 	};
 	return (
 		<>
-			<div className="sticky top-0 z-[100]">
-				<Sidebar isOpen={isOpen} toggle={toggle} />
-				<NavTop toggle={toggle} />
-			</div>
+			<Sidebar isOpen={isOpen} toggle={toggle} />
+			<NavTop toggle={toggle} />
 		</>
 	);
 };
