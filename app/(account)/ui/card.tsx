@@ -1,8 +1,13 @@
+import React, {FC} from "react";
 import Link from "next/link";
 import { FaGoogle, FaFacebookF } from "react-icons/fa6";
-import Button from "../ui/button";
 
-const Card = ({ children, text = "", }) => {
+type CardProps = {
+	text?: string;
+	children: React.ReactNode;
+}
+
+const Card: FC<CardProps> = ({ children, text = "", }) => {
 	return (
 		<div className=" w-[320px] md:w-[384px]  bg-white px-5 py-4 shadow-md rounded-xl m-2 border border-solid border-sky-600 mx-6">
 			<div className="flex gap-5 items-center">

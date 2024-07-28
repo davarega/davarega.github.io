@@ -70,7 +70,7 @@ const NavBottom = () => {
 			{/* Navbar bawah */}
 			<div className="hidden md:flex w-full bottom-0">
 				<div className="container h-20 mx-auto px-4">
-					<ul className="hidden md:flex gap-x-6 text-white flex justify-between items-center h-full">
+					<ul className="hidden md:flex gap-x-6 text-white justify-between items-center h-full">
 						{/* Load Navbar dari data */}
 						{navItems.map((item, index) => (
 							<li key={index} className="group h-full">
@@ -82,7 +82,7 @@ const NavBottom = () => {
 								</Link>
 								{/* Load dropdown jika ada */}
 								{item.children && (
-									<div className="absolute -mt-5 text-black transition duration-300 rounded-xl hidden group-hover:flex w-auto flex-col gap-4 transition-all bg-white py-3 px-4">
+									<div className="absolute -mt-5 text-black duration-300 rounded-xl hidden group-hover:flex w-auto flex-col gap-4 transition-all bg-white py-3 px-4">
 										{item.children.map((child, index) => (
 											<Link key={index} href={child.link ?? "#"}>
 												<p>{child.label}</p>
