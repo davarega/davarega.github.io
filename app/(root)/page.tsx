@@ -168,13 +168,13 @@ export default function Home() {
 				</div>
 			</div>
 			{/* Section 2 */}
-			<div id="2" className="text-black">
-				<div className="container mx-auto grid gap-10 px-4 md:px-0 md:grid-cols-12 py-10">
+			<div id="2" className="text-black container mx-auto">
+				<div className="grid gap-10 px-4 md:px-0 md:grid-cols-12 py-10">
 					<div className="col-span-full">
 						<h1 className="text-2xl font-semibold">TERBARU</h1>
 						<hr className="w-20 h-1 my-1 bg-red-800 border-0 rounded" />
 					</div>
-					<div className="col-span-full col-span-9 lg:col-span-8">
+					<div className="col-span-full md:col-span-9 lg:col-span-8">
 						{/* List berita terbaru */}
 						<div className="flex flex-col gap-5">
 							{/* Load berita */}
@@ -196,9 +196,9 @@ export default function Home() {
 						</div>
 						{/* List leaderboard */}
 					</div>
-					<div className="col-span-full lg:col-span-4 xl:col-span-3">
+					<div className="items-center md:col-span-5 lg:col-span-4 xl:col-span-3 max-w-72">
 						<div className="flex flex-col px-8 text-white bg-gradient-to-b from-purple-mate via-blue-mate to-blue-dash">
-							<h1 className="px-12 pt-5 pb-3 font-bold text-2xl">LEADERBOARD</h1>
+							<h1 className="mx-auto pt-5 pb-3 font-bold text-2xl">LEADERBOARD</h1>
 							<div className="mx-5 pb-8">
 								{/* List leaderboard 1 - 3 */}
 								{leaderboardTop.map((item, index) => (

@@ -4,8 +4,14 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { FaCamera } from "react-icons/fa";
 
-const Profile = ({ username = "username", userProf = `${noProfileLogo}`, level = "999", exp = 100 }) => {
-  let weight = `w-[${exp}%]`;
+type ProfileProps = {
+  username?: string;
+  userProf?: string;
+  level?: string;
+  exp?: number;
+}
+
+const Profile = ({ username = "username", userProf = `${noProfileLogo}`, level = "999", exp = 100 } : ProfileProps) => {
 
   return (
     <div className="font-poppins relative text-white bg-gradient-to-b from-blue-base to-purple-base p-6 h-full shadow-lg rounded-lg flex flex-col gap-8 items-center">
