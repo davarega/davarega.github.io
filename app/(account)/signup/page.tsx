@@ -128,9 +128,7 @@ const Signup = () => {
                             );
                         }}
                     />
-                    <Link href="/profile">
-                        <Button type="submit" className="bg-gradient-to-r from-[#274B74] to-[#8233C5] text-white rounded-full font-bold shadow">Sign Up</Button>
-                    </Link>
+                    <Button type="submit" className="bg-gradient-to-r from-blue-base to-purple-base text-white rounded-full font-bold shadow">Sign Up</Button>
                 </form>
             </Form>
             {/* <div className="mt-5 flex flex-col gap-3">
