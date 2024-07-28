@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/form"
 import { toast } from "@/components/ui/use-toast"
 import Link from "next/link";
+import ProfilPage from "@/app/(profile)/profile/page";
 
 const Signup = () => {
     const form = useForm<z.infer<typeof RegisterSchema>>({
@@ -41,6 +42,7 @@ const Signup = () => {
                 </pre>
             ),
         })
+        return <ProfilPage username={data.username} />
     }
 
     return (
@@ -127,7 +129,9 @@ const Signup = () => {
                             );
                         }}
                     />
-                    <Button type="submit" className="bg-gradient-to-r from-[#274B74] to-[#8233C5] text-white rounded-full font-bold shadow">Sign Up</Button>
+                    <Link href="/profile">
+                        <Button type="submit" className="bg-gradient-to-r from-[#274B74] to-[#8233C5] text-white rounded-full font-bold shadow">Sign Up</Button>
+                    </Link>
                 </form>
             </Form>
             {/* <div className="mt-5 flex flex-col gap-3">

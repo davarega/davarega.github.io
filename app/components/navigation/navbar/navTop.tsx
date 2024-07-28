@@ -33,8 +33,8 @@ const NavTop = ({ toggle }: { toggle: () => void }) => {
 								</Link>
 							</li>
 							<li>
-								<Link href="/profil">
-									<p>Profil</p>
+								<Link href="/profile">
+									<p>Profile</p>
 								</Link>
 							</li>
 							<li>

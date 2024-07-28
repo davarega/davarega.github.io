@@ -1,8 +1,10 @@
 import React from "react";
 import Datadiri from "../prophile/datadiri/page";
 import Profile from "../prophile/profil/page";
+import { noProfileLogo } from '@/app/components/loadimages';
+// "/images/prof.jpeg"
 
-export default function Home() {
+const ProfilPage = async () => {
   return (
     <div className="flex">
       <div className="container mx-auto h-full">
@@ -16,5 +18,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-  );
+  )
 }
+
+export default ProfilPage
